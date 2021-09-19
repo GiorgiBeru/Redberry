@@ -1,0 +1,76 @@
+@import url(https://fontawesome.com/v6.0/icons?d=gallery&p=1&q=chevron&s=solid);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #b5c0c7;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  background-color: black;
+}
+.centered {
+  position: absolute;
+  top: 520px;
+  left: 700px;
+  background-color: black;
+  z-index: 1;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  font-size: 80px;
+  font-family: "BPG Banner Caps", sans-serif;
+  font-weight: 700px;
+  line-height: 70px;
+  transform: scale(1.5, 1.5);
+  letter-spacing: 10px;
+}
+
+#up {
+  position: absolute;
+  top: 525px;
+  left: 886px;
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+  animation: marcxniv 1s ease-in 1s 1;
+  animation-fill-mode: forwards;
+}
+
+#down {
+  position: absolute;
+  left: 900px;
+  top: 550px;
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+  animation: marjvniv 1s ease-in 1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes marcxniv {
+  0% {
+  }
+  100% {
+    z-index: 2;
+    top: 425px;
+    left: 786px;
+  }
+}
+
+@keyframes marjvniv {
+  0% {
+  }
+  100% {
+    left: 1000px;
+    top: 700px;
+    z-index: 2;
+  }
+}

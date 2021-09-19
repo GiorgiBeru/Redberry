@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redberry/კითხვარი</title>
+    <link rel="stylesheet" href="second.css">
+    <script src="second.js" defer></script>
+    <script src="https://kit.fontawesome.com/2e472818bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="first-line">
+        <img src="/images/meore-gverdi.png" alt="Redberry-Header" id="header" />
+    </div>
+
+    <div class="second-line">
+        <div class="left-side">
+            <form id="form2">
+
+                <div class="first-question" id="first-question" onClick="check()">
+                    <p>გაქვს თუ არა გადატანილი Covid-19?*</p>
+                    <div class="ans">
+                      <input type="radio" id="yes-radio1" name="gadatanili" value="ki" required>
+                      <label for="yes-radio1">კი</label><br>
+                    </div>
+                    <div class="ans">
+                      <input type="radio" id="no-radio1" name="gadatanili" value="ara" required>
+                      <label for="no-radio1">არა</label><br>
+                    </div>
+                    <div class="ans">
+                      <input type="radio" id="now-radio1" name="gadatanili" value="axla maqvs" required>
+                      <label for="now-radio1">ახლა მაქვს</label>
+                    </div>
+                </div>
+                
+                <div class="second-question" id="second-question" onClick="check2()">
+                    <p>ანტისხეულების ტესტი გაქვს გაკეთბული?*</p>
+                    <div class="ans">
+                          <input type="radio" id="yes-radio2" name="antibodies" value="ki" required>
+                          <label for="yes-radio2">კი</label><br>
+                    </div>
+                    <div class="ans">
+                          <input type="radio" id="no-radio2" name="antibodies" value="ara" required>
+                          <label for="no-radio2">არა</label><br>
+                    </div>
+                </div>
+               
+                <div class="third-question" id="third-question-op1">
+                        <p>თუ გახსოვს,გთხოვ მიუთითე ტესტის მიახლოებითი რიცხვი და ანტისხეულების რაოდენობა*</p>
+                        <input type="date" id="antib-date" placeholder="რიცხვი" >
+                        <br>
+                        <input type="number" id="antib-num" min="0" placeholder="ანტისხეულების რაოდენობა" required>
+                </div>
+                <div class="third-question" id="third-question-op2">
+                        <p>მიუთითე მიახლოებითი პერიოდი (დღე/თვე/წელი),როდის გქონდა Covid-19*</p>
+                        <input type="date" id="ill-date" required >
+                </div>
+                        
+                    <div class="cordon">
+                    </div> 
+            </form>    
+        </div>
+            
+        <div class="right-side">
+            <img src="/images/vaccinate2.png" alt="Person with a temperature" id="temperature">
+        </div>        
+    </div>
+
+        <button class="fas fa-chevron-right arrow" id="arrow2"></button>
+        <button class="fas fa-chevron-left" id="left-arrow"></button>
+        <div class="ball"></div>
+</body>
+
+</html>

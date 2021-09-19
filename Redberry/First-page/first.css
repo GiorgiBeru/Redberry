@@ -1,0 +1,134 @@
+@import url(https://fontawesome.com/v6.0/icons?d=gallery&p=1&q=chevron&s=solid);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #b5c0c7;
+}
+
+body {
+  width: 1920px;
+  height: 1080px;
+  background-color: #eaeaea;
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.forms label {
+  display: block;
+  width: 575px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.forms input {
+  display: block;
+  width: 513px;
+  height: 50px;
+  font-size: 22px;
+  background-color: #eaeaea;
+}
+
+.form-control {
+  /*47px ინფუთსა და ლეიბელს შორის უნდა იყოს*/
+  padding: 23.5px 0;
+}
+
+form {
+  margin-left: 200px;
+}
+
+#people {
+  /*Exact position for a photo given*/
+  position: absolute;
+  top: 91px;
+  left: 851px;
+  right: 165px;
+  bottom: 139px;
+  z-index:1;
+}
+
+.line {
+  /*Exact coordinates given*/
+  position: absolute;
+  width: 237px;
+  height: 0px;
+  left: 200px;
+  top: 664px;
+
+  border-bottom: 0.8px solid gray;
+  display: block;
+}
+
+#savaldebulo {
+  /*Exact coordinates were given*/
+  position: absolute;
+  width: 365px;
+  height: 91px;
+  left: 200px;
+  top: 684px;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+#arrow {
+  position: absolute;
+  /*given coord. */
+  width: 20px;
+  height: 20px;
+  left: 1018px;
+  top: 939px;
+  font-size: 30px;
+  color: rgb(114, 114, 114);
+  opacity: 0.5;
+  border: none;
+}
+
+#arrow:hover {
+  cursor: pointer;
+}
+
+.middling {
+  display: flex;
+  /*input width*/
+  width: 513px;
+  justify-content: center;
+}
+
+.rect{
+  position:absolute;
+  width: 184px;
+  height: 80px;
+  left: 880px;
+  top: 500px;
+  background-color: #D6D16E;
+  animation-name: gadasvla;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gadasvla{
+  0%{
+  opacity:0;
+  }
+  100%{
+  z-index:0;
+  width: 622px;
+  height: 75px;
+  left: 978px;
+  top: 324px;
+  opacity:0.9;
+  }
+}

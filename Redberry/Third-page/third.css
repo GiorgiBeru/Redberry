@@ -1,0 +1,207 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-caps/css/bpg-banner-caps.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #b5c0c7;
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  background-color: #eaeaea;
+  width: 1920px;
+  height: 1080px;
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.second-line {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-side {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "BPG Banner Caps", sans-serif;
+}
+
+.questions-p3 {
+  padding-bottom: 80px;
+}
+
+input[type="radio"] {
+  height: 17px;
+  width: 17px;
+  transform: scale(1.15);
+}
+
+.ans {
+  padding: 5px 0;
+}
+
+p {
+  padding-bottom: 5px;
+}
+
+.ans:hover {
+  cursor: pointer;
+}
+label:hover {
+  cursor: pointer;
+}
+
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+.finger {
+  color: yellow;
+  padding-right: 5px;
+}
+
+#suggestion-2-dose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+#first-question-p3-op2 {
+  position: relative;
+  z-index: 0;
+  transform: translate(0, -350px);
+}
+
+#suggestion-link {
+  position: relative;
+  z-index: 0;
+  transform: translate(0, -350px);
+}
+
+#protokoli {
+  position: relative;
+  transform: translate(0, -450px);
+  z-index: 0;
+}
+
+.cordon {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  background-color: #eaeaea;
+  transform: translate(-450px, 150px);
+  z-index: 1;
+}
+
+#first-question-p3-op1 {
+  position: relative;
+  z-index: 0;
+  transform: translate(0, 20px);
+}
+
+#arrow3 {
+  position: absolute;
+  /*given coord. */
+  width: 20px;
+  height: 20px;
+  left: 1018px;
+  top: 950px;
+  font-size: 30px;
+  color: rgb(114, 114, 114);
+  opacity: 0.5;
+  z-index: 1;
+  border: none;
+}
+
+#arrow3:hover {
+  cursor: pointer;
+}
+
+#left-arrow3 {
+  position: absolute;
+  /*given coord. */
+  width: 20px;
+  height: 20px;
+  left: 900px;
+  top: 950px;
+  font-size: 30px;
+  color: rgb(114, 114, 114);
+  opacity: 1;
+  z-index: 1;
+  border: none;
+}
+
+#left-arrow3:hover {
+  cursor: pointer;
+}
+
+.star {
+  position: absolute;
+  width: 229px;
+  height: 229px;
+  top: 381px;
+  left: 876px;
+  border-radius: 120px;
+  opacity: 1;
+  z-index: 1;
+  background-color: #dd3939;
+  animation-name: gadasvla1;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#star-photo {
+  position: absolute;
+  opacity: 1;
+  top: 381px;
+  left: 876px;
+  z-index: 0;
+  transform: scale(0.5, 0.5);
+  animation-name: gadasvla2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gadasvla1 {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+    left: 1000px;
+    top: 110px;
+  }
+}
+
+@keyframes gadasvla2 {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+    left: 1000px;
+    top: 110px;
+    transform: scale(1, 1);
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redberry/კითხვარი</title>
+    <link rel="stylesheet" href="third.css">
+    <script src="third.js" defer></script>
+    <script src="https://kit.fontawesome.com/2e472818bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="first-line">
+      <img src="/images/mesame-gverdi.png" alt="header">
+    </header>
+
+    <section class="second-line">
+        <div class="left-side">
+             <form id="form3">
+                <div class="questions-p3" id="first-question-p3" onClick="check()">
+                    <p>უკვე გაკეთებული გაქვს ვაქცინა?*</p>
+                    <div class="ans">
+                          <input type="radio" id="yes-radio-p3" name="vaqcina" value="ki" >
+                          <label for="yes-radio-p3">კი</label><br/>
+                    </div>
+                    <div class="ans">
+                          <input type="radio" id="no-radio-p3" name="vaqcina" value="ara" >
+                          <label for="no-radio-p3">არა</label><br/>
+                    </div>
+                </div>
+                
+                <div class="questions-p3" id="first-question-p3-op1" onClick="checkagain()">
+                    <p>აირჩიე რა ეტაპზე ხარ*</p>
+                    <div class="ans">
+                          <input type="radio" id="first+reg" name="etapi" value="pirveli doza" >
+                          <label for="first+reg">პირველი დოზა და დარეგისტრირებული ვარ მეორეზე</label><br>
+                    </div>
+                    <div class="ans">
+                          <input type="radio" id="both" name="etapi" value="srulad">
+                          <label for="both">სრულად აცრილი ვარ</label><br>
+                    </div>
+                    <div class="ans">
+                          <input type="radio" id="first-reg" name="etapi" value="pirveli ki,ara meore">
+                          <label for="first-reg">პირველი დოზა და არ დავრეგისტირებულვარ მეორეზე</label><br>
+                    </div>
+                </div>
+
+                <div class="questions-p3" id="suggestion-2-dose">
+                    <span>რომ არ გადადო,</span>
+                    <span>ბარემ ახლავე დარეგისტრირდი</span>
+                    <a href="https://booking.moh.gov.ge/">
+                        https://booking.moh.gov.ge/
+                   </a>
+                </div>
+
+                <div class="questions-p3" id="first-question-p3-op2" onClick="checkagain()">
+                    <p>რას ელოდები?*</p>
+                    <div class="ans">
+                          <input type="radio" id="date" name="wait" value="daregistr">
+                          <label for="date">დარეგისტრირებული ვარ და ველოდები თარიღს</label><br>
+                    </div>
+                    <div class="ans">
+                          <input type="radio" id="no-plan" name="wait" value="ar vgegmav">
+                          <label for="no-plan">არ ვგეგმავ</label><br>
+                    </div>
+                    <div class="ans">
+                          <input type="radio" id="plan" name="wait" value="gadatanili">
+                          <label for="plan">გადატანილი მაქვს და ვგეგმავ აცრას</label><br>
+                    </div>
+                </div>
+                
+             </form>
+             <div class="questions-p3" id="suggestion-link"> 
+                    <i class="fas fa-hand-point-right"></i>
+                    <a href="https://booking.moh.gov.ge/">
+                        https://booking.moh.gov.ge/
+                    </a>
+             </div>
+            <div class="questions-p3" id="protokoli">
+                <span>ახალი პროტოკოლით კოვიდის გადატანიდან 1</span>
+                <br>
+                <span>თვის შემდეგ შეგიძლია ვაქცინის გაკეთბა.</span>
+                <br>
+                <i class="fas fa-hand-point-right"></i>
+                <span>რეგისტრაციის ბმული</span>
+                <a href="https://booking.moh.gov.ge/">
+                    https://booking.moh.gov.ge/
+                </a>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <img src="/images/doctor2.png" alt="A doctor">
+        </div>
+
+        <div class="cordon">
+        </div>
+    </section>
+
+    <div class="fas fa-chevron-right arrow" id="arrow3"></div>
+    <div class="fas fa-chevron-left" id="left-arrow3"></div>
+    <div class="star">
+    </div>
+    <div id="star-photo">
+        <img src="/images/star.png" alt="">
+    </div>
+</body>
+

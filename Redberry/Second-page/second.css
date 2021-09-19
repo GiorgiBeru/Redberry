@@ -1,0 +1,199 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-caps/css/bpg-banner-caps.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #b5c0c7;
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  background-color: #eaeaea;
+  width: 1920px;
+  height: 1080px;
+}
+
+.first-line {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.second-line{
+  display: flex;
+}
+
+#temperature{
+  position: absolute;
+  left: 795px;
+  top: 121px;
+  z-index:1;
+}
+
+.left-side{
+  max-height: 1080px;
+  padding-left: 200px;
+  font-weight: normal;
+  font-size:20px;
+  line-height: 24px;
+  font-family: "BPG Banner Caps", sans-serif;
+}
+
+input[type="radio"]{
+  height: 17px;
+  width: 17px;
+  transform: scale(1.15); 
+}
+
+label:hover{
+  cursor: pointer;
+}
+
+input[type="radio"]:hover{
+  cursor:pointer;
+}
+
+.ans{
+  padding: 10px 0;
+}
+
+p{
+  padding-bottom: 10px;
+}
+
+
+.third-question{
+  padding-top: 80px;
+  width: 600px;
+}
+
+input[type="text"]{
+  width: 500px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #eaeaea;
+  font-size: 16px;
+  font-family: "BPG Banner Caps", sans-serif;
+  padding-left: 10px;
+}
+
+.second-question{
+  padding-top: 80px;
+  position: relative;
+  z-index:0;
+}
+
+#third-question-op1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index:0;
+}
+
+#third-question-op2{
+  position: absolute;
+  z-index: 0;
+}
+
+.cordon{
+  position: absolute;
+  width: 600px;
+  height: 500px; 
+  background-color:#eaeaea;
+  transform: translate(0, -200px);
+  z-index:1;
+}
+
+input[type="date"]{
+  width: 500px;
+  height: 50px;
+  background-color: #eaeaea;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+input[type="number"]{
+  width: 500px;
+  height: 50px;
+  background-color: #eaeaea;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+#arrow2 {
+  position: absolute;
+  /*given coord. */
+  width: 20px;
+  height: 20px;
+  left: 1018px;
+  top: 950px;
+  font-size: 30px;
+  color: rgb(114, 114, 114);
+  opacity: 0.5;
+  z-index: 1;
+  border: none;
+}
+
+#arrow2:hover {
+  cursor: pointer;
+}
+
+#left-arrow{
+  position: absolute;
+  /*given coord. */
+  width: 20px;
+  height: 20px;
+  left: 900px;
+  top: 950px;
+  font-size: 30px;
+  color: rgb(114, 114, 114);
+  opacity: 1;
+  z-index: 1;
+  border: none;
+}
+
+#left-arrow:hover{
+  cursor: pointer;
+}
+
+.ball{
+  opacity:0;
+  position: absolute;
+  width: 622px;
+  height: 75px;
+  left: 978px;
+  top: 324px;
+  z-index:0;
+  background-color: #D6D16E;
+  animation-name: gadasvla;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gadasvla{
+   0%{
+   opacity:0;
+   }
+    30%{
+     width: 200px;
+     height: 200px;
+     background-color:#DD3939;
+     opacity: 0.2;
+     border-radius: 0px;
+   }  
+   100%{
+     width: 229px;
+     height: 229px;
+     top: 381px;
+     left: 876px;
+     border-radius: 120px;
+     opacity:1;
+     background-color: #DD3939;
+   }
+}

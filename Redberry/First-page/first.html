@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redberry/კითხვარი</title>
+    <link rel="stylesheet" href="first.css">
+    <script src="first.js" defer></script>
+    <script src="https://kit.fontawesome.com/2e472818bf.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="first-line">
+        <img src="/images/Component 1.png" alt="Redberry-Header" id="header"/>
+    </div>
+
+    <div class="second-line">
+        <div class="forms">
+            <form id="form">
+                <div class="form-control">
+                    <label for="name">სახელი*</label>
+                    <input type="text" class="input" name="სახელის ველი" id="name" placeholder="იოსებ" required onfocusout="validateName()" /> 
+                    <div class="middling">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-control">
+                    <label for="surname">გვარი*</label>
+                    <input type="text" class="input" name="გვარის ველი" id="surname" placeholder="ჯუღაშვილი" required onfocusout="validateSurname()"/> 
+                    <div class="middling">
+                        <span class="helper-text"></span>
+                    </div>   
+                </div>
+
+                <div class="form-control">
+                    <label for="email">მეილი*</label>
+                    <input type="email" class="input" name="იმეილის ველი" id="email" placeholder="fb@redberry.ge" required onfocusout="validateEmail()"/>
+                    <div class="middling">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+            </form>
+            <div class="fas fa-chevron-right arrow" id="arrow"></div>
+            <span class="line"></span>
+            <p id="savaldebulo">*-ით მოცემული ველების შევსება სავალდებულოა</p>
+        </div>
+        <img src="/images/scan2.png" alt="Two people" id="people">
+    </div>   
+        <div class="rect"></div>
+</body>
+
+</html>
